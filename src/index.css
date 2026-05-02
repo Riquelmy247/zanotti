@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --z-bg: #07070a;
+  --z-surface: rgba(255, 255, 255, 0.06);
+  --z-text: rgba(255, 255, 255, 0.86);
+  --z-muted: rgba(255, 255, 255, 0.62);
+  --z-border: rgba(255, 255, 255, 0.12);
+  --z-gold: #d7b56d;
+  --z-gold-soft: rgba(215, 181, 109, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 700px at 15% 15%, rgba(215, 181, 109, 0.12), transparent 55%),
+    radial-gradient(900px 600px at 80% 10%, rgba(255, 255, 255, 0.07), transparent 60%),
+    var(--z-bg);
+  color: var(--z-text);
+}
+
+::selection {
+  background: rgba(215, 181, 109, 0.28);
+}
+
+/* smooth, cinematic scrollbars (optional) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215, 181, 109, 0.35) rgba(255, 255, 255, 0.06);
+}
