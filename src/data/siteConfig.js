@@ -1,6 +1,7 @@
 export const siteConfig = {
   brand: {
     name: 'Zanotti Filmes',
+    logoSrc: './logo.png',
     signature: 'Por Pablo e Mari',
     slogan: 'Filmes de casamento que captam a essência',
     location: 'Uberlândia e região',
@@ -39,6 +40,7 @@ export const siteConfig = {
     ctaSecondary: 'Ver pacotes',
     background: {
       type: 'image',
+      imageSrc: './foto1.JPEG',
       overlayOpacity: 0.62,
     },
     highlights: [
@@ -51,6 +53,10 @@ export const siteConfig = {
     title: 'Quem Somos',
     text:
       'A Zanotti Filmes é especializada na criação de filmes emocionais e atemporais, registrando momentos únicos com um olhar artístico, sensível e cinematográfico. Cada projeto é tratado de forma exclusiva, garantindo um resultado sofisticado e autêntico.',
+    tagline:
+      'Uma dupla que acredita em filmes com verdade, estética e emoção — sem excessos, com intenção.',
+    imageSrc: './fotoCasal.PNG',
+    imageAlt: 'Pablo e Mari — Zanotti Filmes',
   },
   services: {
     title: 'Serviços',
@@ -161,6 +167,7 @@ export const siteConfig = {
   },
   contactSection: {
     title: 'Contato',
+    ctaEyebrow: 'Mensagem',
     cta: 'Vamos contar sua história em filme.',
     secondary:
       'Clique no WhatsApp para conversar com a gente e receber um orçamento personalizado.',

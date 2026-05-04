@@ -14,6 +14,14 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-6xl pb-16 pt-14 sm:pb-20 sm:pt-16 lg:pb-24 lg:pt-20">
         <div className="relative overflow-hidden rounded-3xl border border-[color:var(--z-border)] bg-white/5">
           <div className="absolute inset-0">
+            {siteConfig.hero.background?.imageSrc ? (
+              <img
+                src={siteConfig.hero.background.imageSrc}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover"
+                decoding="async"
+              />
+            ) : null}
             <div className="absolute inset-0 bg-[radial-gradient(900px_500px_at_20%_20%,rgba(215,181,109,0.18),transparent_55%),radial-gradient(900px_500px_at_85%_15%,rgba(255,255,255,0.10),transparent_60%)]" />
             <div
               className="absolute inset-0"

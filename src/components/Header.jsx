@@ -25,14 +25,19 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a
           href="#inicio"
-          className="group inline-flex items-baseline gap-3 text-left"
+          className="group inline-flex items-center gap-3 text-left"
           aria-label={`${siteConfig.brand.name} - Início`}
           onClick={() => setOpen(false)}
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-[color:var(--z-border)] bg-white/5">
-            <span className="text-sm font-semibold tracking-tight text-white">
-              ZF
-            </span>
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[color:var(--z-border)] bg-white/5 sm:h-11 sm:w-11">
+            <img
+              src={siteConfig.brand.logoSrc}
+              alt=""
+              width={44}
+              height={44}
+              className="h-full w-full object-contain p-1"
+              decoding="async"
+            />
           </div>
           <div className="leading-tight">
             <p className="text-sm font-semibold tracking-tight text-white">

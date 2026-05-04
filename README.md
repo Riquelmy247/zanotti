@@ -38,6 +38,12 @@ Pré-visualizar o build:
 npm run preview
 ```
 
+Publicar no GitHub Pages (executa o build via `predeploy` e envia a pasta `dist` com `gh-pages`):
+
+```bash
+npm run deploy
+```
+
 ## Onde editar o conteúdo do site
 
 Todo o conteúdo textual e dados editáveis do site ficam centralizados em:

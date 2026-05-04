@@ -106,7 +106,7 @@ export default function Packages() {
     <Section id="pacotes">
       <SectionHeading
         title={siteConfig.packages.title}
-        subtitle="Escolha o pacote ideal para o seu dia — com entregas pensadas para emocionar."
+        subtitle="Escolha o pacote ideal para o seu dia, com entregas pensadas para emocionar."
       />
 
       <div className="grid gap-4 lg:grid-cols-3 lg:items-stretch">

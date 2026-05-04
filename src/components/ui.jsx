@@ -56,9 +56,10 @@ export function GlassCard({ children, className = '' }) {
   )
 }
 
-export function MotionInView({ children, delay = 0 }) {
+export function MotionInView({ children, delay = 0, className = '' }) {
   return (
     <motion.div
+      className={className}
       variants={fadeUp}
       initial="hidden"
       whileInView="show"
@@ -90,5 +91,6 @@ GlassCard.propTypes = {
 MotionInView.propTypes = {
   children: PropTypes.node.isRequired,
   delay: PropTypes.number,
+  className: PropTypes.string,
 }
 

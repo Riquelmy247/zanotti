@@ -13,16 +13,19 @@ export default function Contact() {
       <SectionHeading title={siteConfig.contactSection.title} />
 
       <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-stretch">
-        <MotionInView>
-          <GlassCard className="p-7 sm:p-8">
-            <p className="text-2xl font-[500] tracking-tight text-white">
+        <MotionInView className="h-full min-h-0">
+          <GlassCard className="flex h-full flex-col p-7 sm:p-8">
+            <p className="text-xs tracking-[0.28em] uppercase text-white/60">
+              {siteConfig.contactSection.ctaEyebrow}
+            </p>
+            <p className="mt-4 text-3xl font-[500] tracking-tight text-white sm:text-4xl">
               {siteConfig.contactSection.cta}
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[color:var(--z-muted)]">
+            <p className="mt-4 text-base leading-relaxed text-[color:var(--z-muted)] sm:text-lg">
               {siteConfig.contactSection.secondary}
             </p>
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
               <a
                 href={whatsappHref}
                 target="_blank"
@@ -45,12 +48,12 @@ export default function Contact() {
           </GlassCard>
         </MotionInView>
 
-        <MotionInView delay={0.05}>
-          <GlassCard className="h-full p-7 sm:p-8">
+        <MotionInView delay={0.05} className="h-full min-h-0">
+          <GlassCard className="flex h-full flex-col p-7 sm:p-8">
             <p className="text-xs tracking-[0.28em] uppercase text-white/60">
               Contatos
             </p>
-            <div className="mt-5 grid gap-4">
+            <div className="mt-5 grid flex-1 gap-4">
               <div className="rounded-2xl border border-[color:var(--z-border)] bg-white/5 p-5">
                 <p className="text-xs tracking-[0.26em] uppercase text-white/55">
                   WhatsApp
