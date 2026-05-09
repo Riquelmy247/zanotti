@@ -81,7 +81,7 @@ function PackageCard({ pack, index }) {
                 : 'border-[color:var(--z-border)] bg-white/5 text-white/90 hover:bg-white/10',
             ].join(' ')}
           >
-            Solicitar
+            Solicitar Orçamento
           </a>
         </div>
       </GlassCard>
